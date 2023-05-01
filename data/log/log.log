@@ -1,0 +1,196 @@
+[33mWARN[0m[2023-05-01 01:02:57] not enable search                            
+[33mWARN[0m[2023-05-01 01:02:57] not enable search                            
+[GIN] 2023/05/01 - 01:03:12 | 200 |      231.35µs |  43.198.106.127 | GET      "/"
+[GIN] 2023/05/01 - 01:03:12 | 200 |     3.78235ms |  43.198.106.127 | GET      "/assets/index.15d8d646.css"
+[GIN] 2023/05/01 - 01:03:12 | 200 |     1.52038ms |  43.198.106.127 | GET      "/assets/index.5bf8971c.js"
+[GIN] 2023/05/01 - 01:03:13 | 200 |      312.04µs |  43.198.106.127 | GET      "/assets/entry.dd5183f7.js"
+[GIN] 2023/05/01 - 01:03:13 | 200 |      555.43µs |  43.198.106.127 | GET      "/api/public/settings"
+[GIN] 2023/05/01 - 01:03:13 | 200 |       63.08µs |  43.198.106.127 | GET      "/api/me"
+[GIN] 2023/05/01 - 01:03:13 | 200 |      593.94µs |  43.198.106.127 | GET      "/assets/index.1bbb0051.js"
+[GIN] 2023/05/01 - 01:03:13 | 200 |       330.7µs |  43.198.106.127 | GET      "/assets/index.43876868.js"
+[GIN] 2023/05/01 - 01:03:19 | 200 |     1.27769ms |  43.198.106.127 | POST     "/api/auth/login"
+[GIN] 2023/05/01 - 01:03:19 | 200 |      287.66µs |  43.198.106.127 | GET      "/api/me"
+[GIN] 2023/05/01 - 01:03:20 | 200 |      392.57µs |  43.198.106.127 | GET      "/assets/Layout.a5ff5942.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |     1.27807ms |  43.198.106.127 | GET      "/assets/Markdown.f6854125.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |       47.08µs |  43.198.106.127 | GET      "/assets/api.71437c03.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |       47.87µs |  43.198.106.127 | GET      "/assets/useUtil.ab569e3b.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |       46.33µs |  43.198.106.127 | GET      "/assets/FolderTree.56fd908c.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |       52.75µs |  43.198.106.127 | GET      "/assets/index.3137d2fb.js"
+[GIN] 2023/05/01 - 01:03:20 | 200 |      192.49µs |  43.198.106.127 | GET      "/assets/index.80062682.js"
+[31mERRO[0m[2023-05-01 01:03:20] failed list /: please add a storage first.
+github.com/alist-org/alist/v3/internal/op.GetStorageAndActualPath
+	/home/runner/work/alist/alist/internal/op/path.go:19
+github.com/alist-org/alist/v3/internal/fs.list
+	/home/runner/work/alist/alist/internal/fs/list.go:18
+github.com/alist-org/alist/v3/internal/fs.List
+	/home/runner/work/alist/alist/internal/fs/fs.go:22
+github.com/alist-org/alist/v3/server/handles.FsGet
+	/home/runner/work/alist/alist/server/handles/fsread.go:300
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/asm_amd64.s:1598
+failed get storage 
+[GIN] 2023/05/01 - 01:03:20 | 200 |     696.549µs |  43.198.106.127 | POST     "/api/fs/get"
+[31mERRO[0m[2023-05-01 01:03:20] failed list /: please add a storage first.
+github.com/alist-org/alist/v3/internal/op.GetStorageAndActualPath
+	/home/runner/work/alist/alist/internal/op/path.go:19
+github.com/alist-org/alist/v3/internal/fs.list
+	/home/runner/work/alist/alist/internal/fs/list.go:18
+github.com/alist-org/alist/v3/internal/fs.List
+	/home/runner/work/alist/alist/internal/fs/fs.go:22
+github.com/alist-org/alist/v3/server/handles.FsList
+	/home/runner/work/alist/alist/server/handles/fsread.go:82
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/asm_amd64.s:1598
+failed get storage 
+[GIN] 2023/05/01 - 01:03:20 | 200 |      386.16µs |  43.198.106.127 | POST     "/api/fs/list"
+[GIN] 2023/05/01 - 01:03:21 | 200 |      112.02µs |  43.198.106.127 | GET      "/api/me"
+[GIN] 2023/05/01 - 01:03:22 | 200 |      241.28µs |  43.198.106.127 | GET      "/assets/index.3c6db0ed.js"
+[GIN] 2023/05/01 - 01:03:22 | 200 |       59.03µs |  43.198.106.127 | GET      "/assets/Profile.c5801481.js"
+[GIN] 2023/05/01 - 01:03:38 | 200 |      721.26µs |  43.198.106.127 | POST     "/api/me/update"
+[GIN] 2023/05/01 - 01:03:41 | 200 |      342.34µs |  43.198.106.127 | POST     "/api/auth/login"
+[GIN] 2023/05/01 - 01:03:42 | 200 |      102.56µs |  43.198.106.127 | GET      "/api/me"
+[GIN] 2023/05/01 - 01:03:49 | 200 |      61.289µs |  43.198.106.127 | GET      "/assets/DeletePopover.06cba9bf.js"
+[GIN] 2023/05/01 - 01:03:49 | 200 |      65.649µs |  43.198.106.127 | GET      "/assets/Storages.3deccba1.js"
+[GIN] 2023/05/01 - 01:03:49 | 200 |      137.06µs |  43.198.106.127 | GET      "/api/admin/driver/names"
+[GIN] 2023/05/01 - 01:03:49 | 200 |      626.07µs |  43.198.106.127 | GET      "/api/admin/storage/list"
+[GIN] 2023/05/01 - 01:03:50 | 200 |       42.26µs |  43.198.106.127 | GET      "/assets/ResponsiveGrid.cd5eae01.js"
+[GIN] 2023/05/01 - 01:03:50 | 200 |        58.8µs |  43.198.106.127 | GET      "/assets/item_type.be442da4.js"
+[GIN] 2023/05/01 - 01:03:50 | 200 |      278.61µs |  43.198.106.127 | GET      "/assets/AddOrEdit.63b36a53.js"
+[GIN] 2023/05/01 - 01:03:50 | 200 |     2.19384ms |  43.198.106.127 | GET      "/api/admin/driver/list"
+[GIN] 2023/05/01 - 01:03:52 | 200 |     240.619µs |  43.198.106.127 | GET      "/assets/backup-restore.09c9cb85.js"
+[33mWARN[0m[2023-05-01 01:03:56] not enable search                            
+[GIN] 2023/05/01 - 01:03:56 | 200 |    5.783319ms |  43.198.106.127 | POST     "/api/admin/setting/save"
+[31mERRO[0m[2023-05-01 01:03:57] admin or guest user can not be created       
+[GIN] 2023/05/01 - 01:03:57 | 200 |      486.52µs |  43.198.106.127 | POST     "/api/admin/user/create"
+[31mERRO[0m[2023-05-01 01:03:57] admin or guest user can not be created       
+[GIN] 2023/05/01 - 01:03:57 | 200 |      256.88µs |  43.198.106.127 | POST     "/api/admin/user/create"
+[GIN] 2023/05/01 - 01:03:58 | 200 |  1.278640187s |  43.198.106.127 | POST     "/api/admin/storage/create"
+[GIN] 2023/05/01 - 01:04:01 | 200 |  2.206362988s |  43.198.106.127 | POST     "/api/admin/storage/create"
+[31mERRO[0m[2023-05-01 01:04:02] failed init storage but storage is already created: failed init storage: expired_token : refresh token has been used 
+[GIN] 2023/05/01 - 01:04:02 | 200 |  1.275120368s |  43.198.106.127 | POST     "/api/admin/storage/create"
+[31mERRO[0m[2023-05-01 01:04:05] failed init storage but storage is already created: failed init storage: need img validate code: <img src="data:image/png;base64,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"/> 
+[GIN] 2023/05/01 - 01:04:05 | 200 |  2.172771231s |  43.198.106.127 | POST     "/api/admin/storage/create"
+[GIN] 2023/05/01 - 01:04:05 | 200 |   98.190771ms |  43.198.106.127 | POST     "/api/admin/storage/create"
+[GIN] 2023/05/01 - 01:04:22 | 200 |     105.151µs |  43.198.106.127 | GET      "/api/admin/driver/names"
+[GIN] 2023/05/01 - 01:04:22 | 200 |       745.8µs |  43.198.106.127 | GET      "/api/admin/storage/list"
+[GIN] 2023/05/01 - 01:04:30 | 200 |      864.65µs |  43.198.106.127 | GET      "/api/admin/storage/get?id=4"
+[GIN] 2023/05/01 - 01:04:30 | 200 |      359.96µs |  43.198.106.127 | GET      "/api/admin/driver/info?driver=189CloudPC"
+[GIN] 2023/05/01 - 01:04:39 | 200 |  1.441752342s |  43.198.106.127 | POST     "/api/admin/storage/update"
+[GIN] 2023/05/01 - 01:04:39 | 200 |      135.81µs |  43.198.106.127 | GET      "/api/admin/driver/names"
+[GIN] 2023/05/01 - 01:04:39 | 200 |     606.879µs |  43.198.106.127 | GET      "/api/admin/storage/list"
+[GIN] 2023/05/01 - 01:04:42 | 200 |       443.7µs |  43.198.106.127 | GET      "/api/admin/storage/get?id=3"
+[GIN] 2023/05/01 - 01:04:42 | 200 |      125.74µs |  43.198.106.127 | GET      "/api/admin/driver/info?driver=BaiduNetdisk"
+[GIN] 2023/05/01 - 01:05:12 | 200 |  1.313833054s |  43.198.106.127 | POST     "/api/admin/storage/update"
+[GIN] 2023/05/01 - 01:05:12 | 200 |       83.01µs |  43.198.106.127 | GET      "/api/admin/driver/names"
+[GIN] 2023/05/01 - 01:05:12 | 200 |      621.52µs |  43.198.106.127 | GET      "/api/admin/storage/list"
+[GIN] 2023/05/01 - 01:06:07 | 200 |      165.65µs |  43.198.106.127 | GET      "/"
+[GIN] 2023/05/01 - 01:06:08 | 200 |      447.27µs |  43.198.106.127 | GET      "/api/public/settings"
+[GIN] 2023/05/01 - 01:06:08 | 200 |      126.88µs |  43.198.106.127 | GET      "/api/me"
+[GIN] 2023/05/01 - 01:06:08 | 200 |      238.43µs |  43.198.106.127 | POST     "/api/fs/get"
+[GIN] 2023/05/01 - 01:06:08 | 200 |      377.79µs |  43.198.106.127 | POST     "/api/fs/list"
+[GIN] 2023/05/01 - 01:06:09 | 200 |      243.38µs |  43.198.106.127 | GET      "/assets/Folder.b511ba9e.css"
+[GIN] 2023/05/01 - 01:06:09 | 200 |       39.64µs |  43.198.106.127 | GET      "/assets/Paginator.ef640c98.js"
+[GIN] 2023/05/01 - 01:06:09 | 200 |       499.3µs |  43.198.106.127 | GET      "/assets/Folder.2b755c92.js"
+[GIN] 2023/05/01 - 01:06:09 | 200 |       20.56µs |  43.198.106.127 | GET      "/assets/icon.2e2565f4.js"
+[GIN] 2023/05/01 - 01:06:09 | 200 |       54.06µs |  43.198.106.127 | GET      "/assets/List.038e0541.js"
+[GIN] 2023/05/01 - 01:06:11 | 200 |  144.896577ms |  43.198.106.127 | POST     "/api/fs/list"
+[31mERRO[0m[2023-05-01 01:06:11] failed link /小雅的资源/README.md: request failed,code: 500, message: failed get link: ParamFlowException: 27d7442b816643aea7fc87c005f62fb0
+failed get link
+github.com/alist-org/alist/v3/internal/op.Link.func1
+	/home/runner/work/alist/alist/internal/op/fs.go:253
+github.com/alist-org/alist/v3/pkg/singleflight.(*Group[...]).doCall.func2
+	/home/runner/work/alist/alist/pkg/singleflight/singleflight.go:193
+github.com/alist-org/alist/v3/pkg/singleflight.(*Group[...]).doCall
+	/home/runner/work/alist/alist/pkg/singleflight/singleflight.go:195
+github.com/alist-org/alist/v3/pkg/singleflight.(*Group[...]).Do
+	/home/runner/work/alist/alist/pkg/singleflight/singleflight.go:108
+github.com/alist-org/alist/v3/internal/op.Link
+	/home/runner/work/alist/alist/internal/op/fs.go:260
+github.com/alist-org/alist/v3/internal/fs.link
+	/home/runner/work/alist/alist/internal/fs/link.go:19
+github.com/alist-org/alist/v3/internal/fs.Link
+	/home/runner/work/alist/alist/internal/fs/fs.go:48
+github.com/alist-org/alist/v3/server/handles.Proxy
+	/home/runner/work/alist/alist/server/handles/down.go:86
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Down
+	/home/runner/work/alist/alist/server/middlewares/down.go:40
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/asm_amd64.s:1598
+failed link 
+[GIN] 2023/05/01 - 01:06:11 | 200 |  267.498714ms |  43.198.106.127 | GET      "/p/小雅的资源/README.md?ts=1682903172224"
