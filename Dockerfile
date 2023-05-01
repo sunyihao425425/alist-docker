@@ -1,6 +1,4 @@
-FROM scratch
+FROM xhofe/alist:latest
 ADD ./ /
-WORKDIR /opt/alist/
-LABEL MAINTAINER="i@nn.ci"
 EXPOSE 5244
 CMD ["/alist","server","--no-prefix"]
